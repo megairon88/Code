@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>Feet</label>
+            <input id="inputFeet" type="number" placeholder="Feet"
+                   oninput="feetConverter(this.value)"
+                   onchange="feetConverter(this.value)">
+        </p>
+        <p>Meters: <span id="outputMeters"></span></p>
+
+        <p>
+            <label>Meters</label>
+            <input id="inputMeters" type="number" placeholder="Meters"
+                   oninput="metersConverter(this.value)"
+                   onchange="metersConverter(this.value)">
+        </p>
+        <p>Feet: <span id="outputFeet"></span></p>
+    </form>
+
+    <script src="my.js"></script>
+</body>
+</html>
